@@ -1,0 +1,16 @@
+[package]
+name = "kraken_chores"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+kraken_rest_client = { git = "https://github.com/riccz/kraken-sdk-rust.git" }
+dotenvy = "0.15.7"
+tracing = "0.1"
+tracing-subscriber = "0.3.0"
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4.5.4", features = ["derive", "env"] }
+anyhow = "1.0.82"
+rust_decimal = "1.35.0"
